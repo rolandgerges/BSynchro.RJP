@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<EnablePreviewFeatures>True</EnablePreviewFeatures>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Optimize>true</Optimize>
+    	<RootNamespace>Bsynchro.RJP.Infrastructure</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+
+		<ProjectReference Include="..\Bsynchro.RJP.Migrations\Bsynchro.RJP.Migrations.csproj" />
+	</ItemGroup>
+
+</Project>

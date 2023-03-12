@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<EnablePreviewFeatures>True</EnablePreviewFeatures>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Optimize>true</Optimize>
+    	<RootNamespace>Bsynchro.RJP.Core</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="MediatR" Version="11.0.0" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Bsynchro.RJP.Contracts\Bsynchro.RJP.Contracts.csproj" />
+	  <ProjectReference Include="..\Bsynchro.RJP.Infrastructure\Bsynchro.RJP.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Account\" />
+	  <None Remove="Account\Commands\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Account\" />
+	  <Folder Include="Account\Commands\" />
+	</ItemGroup>
+</Project>
